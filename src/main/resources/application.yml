@@ -1,0 +1,22 @@
+server:
+  port: 8081
+# H2
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  h2:
+    console:
+      enabled: true
+      path: /h2
+
+  # Datasource
+  datasource:
+    url: jdbc:h2:mem:gra
+    username: admin
+    driver-class-name: org.h2.Driver
+
+
+token:
+  signing:
+    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
